@@ -4,6 +4,9 @@
 
   &__item {
     flex-basis: calc((100% - 90px) / 4);
+    @include md {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 
   &__icon {

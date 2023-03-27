@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/media";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/button";
@@ -43,6 +44,7 @@ body {
 }
 
 .container {
+  min-width: 320px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
