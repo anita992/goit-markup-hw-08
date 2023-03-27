@@ -1,0 +1,40 @@
+.clients {
+  padding-bottom: 94px;
+
+  &__title {
+    text-align: center;
+    font-weight: $font-big;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-top: 94px;
+    color: $main-color;
+  }
+  &__set {
+    display: flex;
+    gap: 30px;
+
+    &-icon {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      width: 167px;
+      height: 92px;
+      fill: $clients-icon-color;
+      border: 1px solid rgba(175, 177, 184, 1);
+      border-radius: 4px;
+      transition-property: color border-color transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-icon:hover,
+    &:focus-visible {
+      fill: $accent-color;
+      border-color: $accent-color;
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+}

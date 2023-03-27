@@ -1,0 +1,32 @@
+.grid {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    background-color: $button-color;
+    border-radius: 4px;
+  }
+
+  &__title {
+    font-weight: $font-big;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: $main-color;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+  }
+}

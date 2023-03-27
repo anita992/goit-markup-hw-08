@@ -1,0 +1,185 @@
+/* footer logo, company adres & contact */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footbar-background-color;
+  &__set {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+  }
+
+  &__logo-font {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: $font-big;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  .footer-details {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 70px;
+    background: $footbar-background-color;
+
+    &__address a {
+      display: block;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $third-color;
+      text-decoration: none;
+      transition-property: color transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $accent-color;
+        transform: scale(1.2);
+      }
+    }
+
+    &__mail a {
+      display: block;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      margin: 9px 0;
+      color: $footbar-contact-color;
+      text-decoration: underline;
+      transition-property: color transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $accent-color;
+        transform: scale(1.2);
+      }
+    }
+
+    &__telephone a {
+      display: block;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $footbar-contact-color;
+      transition-property: color transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $accent-color;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+.logo-word {
+  color: $third-color;
+}
+
+/* footer social media section */
+
+.footer-social {
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 70px;
+
+  &__text {
+    font-weight: $font-big;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $third-color;
+  }
+}
+.social-elements {
+  display: flex;
+  width: 206px;
+  gap: 10px;
+
+  &__item {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  &__footer-icon {
+    fill: $social-icon;
+    --color2: #ffffff;
+    transition-property: fill transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      cursor: pointer;
+      transform: rotate(360deg);
+    }
+  }
+}
+/* newsletter */
+.footer-newsletter {
+  position: relative;
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  bottom: 0;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+  }
+  &__text {
+    font-weight: $font-big;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &__input-mail {
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: $footbar-background-color;
+    color: $third-color;
+  }
+  &__input-mail:hover,
+  &__input-mail:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.button-text {
+  font-weight: $font-big;
+  font-size: 16px;
+  line-height: 1.88;
+  margin-right: 24px;
+  color: $third-color;
+}
