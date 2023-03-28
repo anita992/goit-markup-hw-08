@@ -53,13 +53,18 @@
   align-items: center;
   width: 200px;
   height: 50px;
-  margin-top: 36px;
-  margin-left: 12px;
+  margin: 20px auto;
   background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    margin-top: 35px;
+    margin-left: 12px;
+  }
 }
 /* modal buttons */
 .send-button {

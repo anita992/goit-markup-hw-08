@@ -14,6 +14,7 @@
 }
 .grid-products {
   display: flex;
+  gap: 30px;
 
   &__item {
     width: 370px;
@@ -40,5 +41,15 @@
       color: $third-color;
       background-color: rgba(47, 48, 58, 0.8);
     }
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-products {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .section-products {
+    display: none;
   }
 }

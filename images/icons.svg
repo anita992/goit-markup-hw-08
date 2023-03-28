@@ -85,5 +85,8 @@
 <path fill="#2196f3" style="fill: var(--color1, #2196f3)" d="M2.667 0h16c1.473 0 2.667 1.194 2.667 2.667v14.667c0 1.473-1.194 2.667-2.667 2.667h-16c-1.473 0-2.667-1.194-2.667-2.667v-14.667c0-1.473 1.194-2.667 2.667-2.667z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.2667" d="M5.276 10.336l-0.092-0.088-0.092 0.087-1.285 1.219 0.101 0.097 4.753 4.533 0.092-0.088 10.107-9.641-0.101-0.096-1.268-1.209-0.092 0.088-8.737 8.328-3.385-3.229z"></path>
 </symbol>
+<symbol id="icon_menu" viewBox="0 0 32 32">
+<path  d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z"></path>
+</symbol>
 </defs>
 </svg>
