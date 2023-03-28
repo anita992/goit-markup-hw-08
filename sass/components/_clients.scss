@@ -13,12 +13,13 @@
   }
   &__set {
     display: flex;
-    gap: 30px;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
     &-icon {
       box-sizing: border-box;
       display: flex;
-      flex-direction: row;
+      justify-content: center;
       width: 167px;
       height: 92px;
       fill: $clients-icon-color;
@@ -36,5 +37,41 @@
       cursor: pointer;
       transform: scale(1.2);
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clients__set {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .clients__set-icon {
+    height: 92px;
+    width: 210px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients__set-icon {
+    height: 92px;
+    width: 210px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__set-icon {
+    height: 92px;
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__set-icon {
+    height: 92px;
+    width: 170px;
   }
 }

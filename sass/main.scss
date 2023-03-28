@@ -43,11 +43,36 @@ body {
   padding-bottom: 94px;
 }
 
+// .container {
+//   // min-width: 320px;
+//   // max-width: 1200px;
+//   // margin: 0 auto;
+//   // padding: 0 15px;
 .container {
-  min-width: 320px;
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    .container {
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
 }
 
 .accent {
