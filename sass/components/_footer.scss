@@ -183,3 +183,49 @@
   margin-right: 24px;
   color: $third-color;
 }
+
+@media screen and (max-width: 480px) {
+  .footer__logo-font {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__set {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .footer-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px 60px 0px;
+
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .team__item {
+    width: 270px;
+    height: 100%;
+  }
+  .team__image {
+    width: 100%;
+  }
+}
