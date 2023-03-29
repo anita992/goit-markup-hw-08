@@ -17,11 +17,7 @@
     gap: 30px;
   }
   &__item {
-    width: 270px;
-    height: 428px;
-  }
-  &__image {
-    display: block;
+    flex-basis: 100%;
   }
 
   &__information {
@@ -51,66 +47,6 @@
     color: $secondary-color;
   }
 }
-@media screen and (max-width: 480px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .team__item {
-    width: 450px;
-    height: 100%;
-  }
-  .team__image {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 766px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .team__item {
-    width: 354px;
-    height: 100%;
-  }
-  .team__image {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .team__item {
-    width: 354px;
-    height: 100%;
-  }
-  .team__image {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .team__item {
-    width: 270px;
-    height: 100%;
-  }
-  .team__image {
-    width: 100%;
-  }
-}
 .social-media {
   display: flex;
   justify-content: center;
@@ -130,5 +66,38 @@
     --color2: #ffffff;
     cursor: pointer;
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .team__item {
+    flex-basis: calc((100% - 40px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+
+    align-items: center;
+  }
+  .team__item {
+    flex-basis: calc((100% - 40px) / 4);
+  }
+  .team__image {
+    width: 100%;
   }
 }
